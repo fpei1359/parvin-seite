@@ -1,0 +1,187 @@
+-<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>طراح طرح‌های توجیهی</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body  {
+  font-family: 'Vazir', sans-serif;
+}
+
+
+    header {
+      background: url('https://images.unsplash.com/photo-1531327430560-85649e5e69c0') no-repeat center center/cover;
+      color: blue;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 2rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .card i {
+      font-size: 2.5rem;
+      color: #2ecc71;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      color: #27ae60;
+      margin-bottom: 0.5rem;
+    }
+
+    .cta {
+      background-color: #27ae60;
+      color: yellow;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .cta button {
+      background-color: white;
+      color: #27ae60;
+      padding: 0.7rem 1.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    .contact {
+      padding: 3rem 2rem;
+      background-color: #ecf0f1;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.8rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    form button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>تهیه حرفه‌ای طرح‌های توجیهی</h1>
+    <p>با ما سرمایه‌گذار جذب کنید و مجوز بگیرید</p>
+  </header>
+
+  <section class="services">
+    <div class="card">
+      <i class="fas fa-seedling"></i>
+      <h3>طرح توجیهی خدماتی</h3>
+      <p>ویژه کلیه طرحها با تحلیل دقیق مالی و بازار</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-industry"></i>
+      <h3>طرح صنعتی</h3>
+      <p>برای کارخانه‌ها و تولیدی‌ها با استاندارد بانک‌ها و سازمان‌ها</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-lightbulb"></i>
+      <h3>طرح‌های نوآورانه</h3>
+      <p>ایده‌های خاص شما را به زبان عدد و منطق ترجمه می‌کنیم</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>طرح خود را همین حالا ثبت کنید</h2>
+    <p>با مشاوره رایگان مسیر خود را بهتر انتخاب کنید</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">درخواست مشاوره</button>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>فرم تماس با ما</h2>
+    <form>
+      <input type="text" placeholder="نام کامل شما" required />
+      <input type="email" placeholder="ایمیل شما" required />
+      <textarea rows="5" placeholder="پیام یا درخواست شما" required></textarea>
+      <button type="submit">ارسال پیام</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 طراحی طرح‌های توجیهی | کلیه حقوق محفوظ است</p>
+  </footer>
+
+</body>
+</html>
